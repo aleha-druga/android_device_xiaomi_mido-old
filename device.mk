@@ -138,8 +138,7 @@ PRODUCT_PACKAGES += \
 
 # Consumerir
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    consumerir.msm8953
+    android.hardware.ir@1.0-service.xiaomi_mido
 
 # Display
 PRODUCT_PACKAGES += \
