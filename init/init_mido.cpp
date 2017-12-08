@@ -41,6 +41,7 @@ char const *heapminfree;
 char const *heapmaxfree;
 char const *large_cache_height;
 
+using android::init::property_set;
 
 static void init_alarm_boot_properties()
 {
@@ -67,9 +68,9 @@ static void init_alarm_boot_properties()
      * 8 -> KPDPWR_N pin toggled (power key pressed)
      */
      if (boot_reason == 3) {
-        android::init::property_set("ro.alarm_boot", "true");
+        property_set("ro.alarm_boot", "true");
      } else {
-        android::init::property_set("ro.alarm_boot", "false");
+        property_set("ro.alarm_boot", "false");
      }
 }
 
@@ -111,22 +112,22 @@ void vendor_load_properties()
     init_alarm_boot_properties();
     check_device();
 
-    android::init::property_set("dalvik.vm.heapstartsize", heapstartsize);
-    android::init::property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    android::init::property_set("dalvik.vm.heapsize", heapsize);
-    android::init::property_set("dalvik.vm.heaptargetutilization", "0.75");
-    android::init::property_set("dalvik.vm.heapminfree", heapminfree);
-    android::init::property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_set("dalvik.vm.heapstartsize", heapstartsize);
+    property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
+    property_set("dalvik.vm.heapsize", heapsize);
+    property_set("dalvik.vm.heaptargetutilization", "0.75");
+    property_set("dalvik.vm.heapminfree", heapminfree);
+    property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
-    android::init::property_set("ro.hwui.texture_cache_size", "72");
-    android::init::property_set("ro.hwui.layer_cache_size", "48");
-    android::init::property_set("ro.hwui.r_buffer_cache_size", "8");
-    android::init::property_set("ro.hwui.path_cache_size", "32");
-    android::init::property_set("ro.hwui.gradient_cache_size", "1");
-    android::init::property_set("ro.hwui.drop_shadow_cache_size", "6");
-    android::init::property_set("ro.hwui.texture_cache_flushrate", "0.4");
-    android::init::property_set("ro.hwui.text_small_cache_width", "1024");
-    android::init::property_set("ro.hwui.text_small_cache_height", "1024");
-    android::init::property_set("ro.hwui.text_large_cache_width", "2048");
-    android::init::property_set("ro.hwui.text_large_cache_height", large_cache_height);
+    property_set("ro.hwui.texture_cache_size", "72");
+    property_set("ro.hwui.layer_cache_size", "48");
+    property_set("ro.hwui.r_buffer_cache_size", "8");
+    property_set("ro.hwui.path_cache_size", "32");
+    property_set("ro.hwui.gradient_cache_size", "1");
+    property_set("ro.hwui.drop_shadow_cache_size", "6");
+    property_set("ro.hwui.texture_cache_flushrate", "0.4");
+    property_set("ro.hwui.text_small_cache_width", "1024");
+    property_set("ro.hwui.text_small_cache_height", "1024");
+    property_set("ro.hwui.text_large_cache_width", "2048");
+    property_set("ro.hwui.text_large_cache_height", large_cache_height);
 }
