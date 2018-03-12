@@ -115,6 +115,7 @@ vendor.vidc.enc.disable.pq=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # Netmgrd
 ro.use_data_netmgrd=true
