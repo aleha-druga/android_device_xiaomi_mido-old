@@ -346,7 +346,7 @@ void undo_hint_action(int hint_id)
 
                 remove_list_node(&active_hint_list_head, found_node);
             } else {
-                ALOGE("Invalid hint ID.");
+                ALOGE("Invalid hint ID: %d.", hint_id);
             }
         }
     }
