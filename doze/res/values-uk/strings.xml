@@ -18,10 +18,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for feature switch [CHAR LIMIT=30] -->
-  <string name="switch_bar_on">Вимкнено</string>
+  <string name="switch_bar_on">Увімкнено</string>
 
   <!-- Label for feature switch [CHAR LIMIT=30] -->
-  <string name="switch_bar_off">Увімкнено</string>
+  <string name="switch_bar_off">Вимкнено</string>
 
   <!-- Device specific settings -->
   <string name="device_settings_app_name">Додаткові налаштування</string>
