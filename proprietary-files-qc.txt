@@ -394,6 +394,7 @@ etc/permissions/telephonyservice.xml
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/qti_libpermissions.xml
 vendor/bin/hw/rild
+vendor/bin/ATFWD-daemon
 vendor/bin/ipacm-diag
 vendor/bin/netmgrd
 vendor/bin/qti
@@ -407,6 +408,7 @@ vendor/lib/libril.so
 lib/android.hidl.manager@1.0.so
 lib64/android.hidl.manager@1.0.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so
