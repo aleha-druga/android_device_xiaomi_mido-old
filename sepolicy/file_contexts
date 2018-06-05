@@ -31,7 +31,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service\.xiaomi_mido u:object_r:hal_fingerprint_default_exec:s0
 
 # Camera
-/system/bin/mm-qcamera-daemon			u:object_r:mm-qcamerad_exec:s0
+/system/vendor/bin/mm-qcamera-daemon			u:object_r:mm-qcamerad_exec:s0
 
 # Debugfs files
 /sys/kernel/debug/rmt_storage(/.*)?             u:object_r:debugfs_rmt:s0
