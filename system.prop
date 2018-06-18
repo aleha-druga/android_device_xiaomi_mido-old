@@ -32,6 +32,9 @@ vendor.audio.pp.asphere.enabled=false
 af.fast_track_multiplier=2
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.use.dts_eagle=true
+use.dts_eagle=true
+hpx_send_params=1
 
 #low audio flinger standby delay to reduce power consumption
 ro.audio.flinger_standbytime_ms=300
